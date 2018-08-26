@@ -1,0 +1,26 @@
+
+QUESTION-1
+
+public class hello
+{
+	public static void main(String args[])
+	{
+			
+			System.out.println("HELLO world!");
+                 }
+}
+
+
+
+QUESTION-2
+
+
+
+public class name
+{
+	public static void main(String args[])
+	{
+			
+			System.out.println("PRIYESH SINGH");
+                 }
+}
