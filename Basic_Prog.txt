@@ -1,0 +1,199 @@
+SOLUTION -1
+
+import java.util.Scanner;
+public class add
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        int z = x + y;
+        System.out.println("Addition is "+ z);
+    }
+}
+
+...................................................................................................................
+
+SOLUTION-2
+
+import java.util.Scanner;
+class leap_year
+{
+	public static void main(String args[])
+	{
+	int x;
+	Scanner sc= new Scanner (System.in);
+	x=sc.nextInt();
+	if(((x%4==0) && (x%100!=0))||(x%400==0))
+   { 
+	System.out.print(x+" leap year");
+   }
+   else
+   { 
+System.out.print(x+" is not leap year");	
+	}
+}
+}
+
+........................................................................................................
+
+SOLUTION 3:
+
+import java.util.Scanner;
+class pattern_star
+{
+public static void main(String args[])
+{
+int i,j;
+ for(i=0;i<4;i++)
+ {
+ for(j=0;j<=i;j++)
+ {
+    System.out.print("*");
+ }
+  System.out.println("\n");
+ }
+
+}
+}
+
+
+
+........................................................................................................................................
+
+SOLUTION- 4:
+
+import java.util.Scanner;
+public class greater
+{
+	public static void main(String args[])
+	{
+	Scanner sc= new Scanner(System.in);
+	int p=sc.nextInt();
+	int q=sc.nextInt();
+	int r=sc.nextInt();
+
+
+	if(p>q && p>r)
+	{
+        System.out.println("p is greatest");
+	}
+	if(q>p && q>r)
+	{
+     System.out.println("q is greatest");
+	}
+	if(r>p && r>q)
+	{
+	System.out.println("r is greatest");
+	}
+
+	if(p==q && q==r)
+	{
+		System.out.println("all no.s are equal");
+	}
+	if(p==q && p>r )
+	{
+		System.out.println("p and q are greatest");
+	}
+	if(p==r && p>q )
+	{
+		System.out.println("p and r are greatest");
+	}
+	if(q==r && q>p )
+	{
+		System.out.println("q and r are greatest");
+	}
+}
+}
+
+
+...............................................................................................................................
+
+SOLUTION- 5:
+
+import java.util.Scanner;
+public class palindrom
+{
+	public static void main(String args[])
+{
+	Scanner sc= new Scanner(System.in);
+	int x=sc.nextInt();
+  int num,rem,rev=0;
+  num=x;
+  while(x!=0)
+  {
+    rem=x%10;
+    rev=(rev*10)+rem;
+    x=x/10;
+  }
+  if(rev==num)
+  {
+System.out.println("Palindrom");
+	}
+  else
+  {
+   
+    System.out.println("Not Palindrom");
+  }
+  }
+	
+}
+
+.....................................................................................................................................
+
+SOLUTION- 6:
+
+import java.util.Scanner;
+public class prime_num
+{
+	public static void main(String args[])
+	{
+	Scanner sc= new Scanner(System.in);
+	int x=sc.nextInt();
+   int j,m = 0;
+if(x == 1)  m = 1;
+if(x != 1)
+{  
+  for (j=2;j<=x/2;j++)
+{
+    if(x%j==0)
+    {
+      m=1;
+    }
+   
+}
+}
+ if(m!=1)
+   
+    {
+System.out.println("Prime number");
+      }
+else System.out.println("Not Prime number");
+
+}
+  }
+
+..................................................................................................................
+
+SOLUTION- 7 :
+
+import java.util.Scanner;
+public class reverse
+{
+	public static void main(String args[])
+{
+	Scanner sc= new Scanner(System.in);
+	int x=sc.nextInt();
+  int  rem,num,reverse=0;
+  num=x;
+  while(x!=0)
+  {
+    rem=x%10;
+    reverse=(reverse*10)+rem;
+    x=x/10;
+  }
+System.out.println(reverse);
+}
+}
+
