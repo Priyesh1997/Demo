@@ -1,0 +1,151 @@
+Question-1
+import  java.util.Scanner;
+class Rect
+{
+            int l,b;
+}
+class r
+{
+            public static void main (String args[])
+            {
+                        int a;
+                        Rect rect = new Rect();
+                        rect.l=20;
+                        rect.b=60;
+                        a=rect.l*rect.b;
+                        System.out.println("Area of Rectangle is : "+a);
+            }
+}
+
+
+Question-2
+
+class Complex
+{
+int Real,Imag;
+Complex()
+{}
+Complex(int Real1,int Imag1)
+{
+Real=Real1;
+Imag=Imag1;
+}
+Complex AddComplex(Complex C1,Complex C2)
+{
+Complex CSum=new Complex();
+CSum.Real=C1.Real+C2.Real;
+CSum.Imag=C1.Imag+C2.Imag;
+return CSum;
+}
+}
+
+class Complexmain
+{
+public static void main(String[] a)
+{
+Complex C1=new Complex(4,8);
+Complex C2=new Complex(5,7);
+Complex C3=new Complex();
+C3=C3.AddComplex(C1,C2);
+System.out.println("SUM:" + C3.Real +"+i" + C3.Imag);
+}
+}
+
+Question-3
+
+class Test {
+    static int i;
+    int j;
+     
+    
+    static {
+        i = 10;
+        System.out.println("static block called ");
+    }
+     
+}
+ 
+class Main {
+    public static void main(String args[]) {
+ 
+       
+        System.out.println(Test.i); 
+    }
+}
+
+Question-4
+
+
+import java.util.Scanner;
+
+public class Sec{
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter size of array : ");
+        int n = sc.nextInt();
+        int ar[] = new int[n];
+        for(int i=0;i<n;i++)
+        {
+            System.out.print("Enter value for array : ");
+            ar[i] = sc.nextInt();
+        }
+        int m=ar[0],m2=ar[0];
+        for(int i=0;i<n;i++)
+        {
+            if(ar[i]>m)
+                m=ar[i];
+        }
+        for(int i=0;i<n;i++)
+        {
+            if(ar[i]>m2 && ar[i]<m)
+                m2=ar[i];
+        }
+        System.out.println("Second largest : "+m2);
+        sc.close();
+    }
+}
+
+Question-5
+
+
+class GFG {
+     
+
+    static void reverse(int arr[], int n, int k)
+    {
+        for (int i = 0; i < n; i += k)
+        {
+            int left = i;
+     
+        
+            int right = Math.min(i + k - 1, n - 1);
+            int temp;
+             
+            
+            while (left < right)
+            {
+                temp=arr[left];
+                arr[left]=arr[right];
+                arr[right]=temp;
+                left+=1;
+                right-=1;
+            }
+        }
+    }
+     
+    
+    public static void main(String[] args)
+    {
+         
+        int arr[] = {1, 2, 3, 4, 5, 6, 7, 8,9,10};
+        int k = 2;
+     
+        int n = arr.length;
+     
+        reverse(arr, n, k);
+     
+        for (int i = 0; i < n; i++)
+            System.out.print(arr[i] + " ");
+    }
+}
