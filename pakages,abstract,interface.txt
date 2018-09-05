@@ -1,0 +1,69 @@
+interface Animal{
+public void speak();
+public void eat();
+}
+ class Dog implements Animal{
+public void speak(){
+System.out.println("I am a Dog");
+}
+public void eat(){
+System.out.println("Dog is eating");
+}
+}
+ class Cat implements Animal{
+public void speak(){
+System.out.println("I am a Cat");
+}
+public void eat(){
+System.out.println("Cat is eating");
+}
+}
+ class demo{
+public static void main(String[] x){
+Dog a=new Dog();
+Cat b=new Cat();
+a.speak();
+a.eat();
+b.speak();
+b.eat();
+}
+}
+
+
+
+
+Solution-2
+mport java.util.*;
+abstract class Animals{
+String color= "red";
+String breed= "chihuahua";
+String name= "rambo";
+public abstract void eat();
+public void speak(){
+System.out.println("I am a Rat");
+}
+}
+/* ..created speak() as a
+non abstract method..*
+
+
+
+
+solution-3
+import java.util.*;
+import java.util.Scanner;
+class max{
+public static void main(String[] x){
+Scanner sc=new Scanner(System.in);
+String a=sc.nextLine();
+String b=sc.nextLine();
+int a1=Integer.parseInt(a);
+int b1=Integer.parseInt(b);
+if(a1>b1){
+System.out.println(a1);
+}
+else{
+System.out.println(b1);
+}
+}
+}  
